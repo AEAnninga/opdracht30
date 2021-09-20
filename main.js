@@ -39,6 +39,15 @@ const doubleArrayValuesMap = array => {
 }
 doubleArrayValuesMap([1, 2, 3]); // result should be [2, 4, 6]
 
+const doubleArrayValuesForEach2 = function(array) {
+    let newArray = [];
+    array.forEach(number => {
+      newArray.push(number * 2);
+    });
+    console.log(newArray);
+};
+doubleArrayValuesForEach2([1, 2, 3]);
+
 /*
 C In een array met integers. Schrijf een JavaScript functie die checkt of er een nummer (integer)
 in de array aanwezig is dat groter is dan 10.
@@ -51,6 +60,8 @@ const containsNumberBiggerThan10 = array => {
 
 containsNumberBiggerThan10([1, 4, 3, 6, 9, 7, 11]); // result should be true 
 containsNumberBiggerThan10([1,2,1,2,1,2]);        // result should be false
+// Let op! Wanneer je van een functie verwacht dat deze True of False (een boolean) retourneert, is het gebruikelijk om er een werkwoord voor te zetten.
+// zodat het een gesloten vraag wordt.
 
 /*
 D In een array met strings. 
